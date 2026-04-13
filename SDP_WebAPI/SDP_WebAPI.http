@@ -1,0 +1,9 @@
+@SDP_WebAPI_HostAddress = http://localhost:5086
+
+GET {{SDP_WebAPI_HostAddress}}/weaterforecast/
+Accept: application/json
+
+GET {{SDP_WebAPI_HostAddress}}/SimpleGetAPI/
+Accept: application/json
+
+###
