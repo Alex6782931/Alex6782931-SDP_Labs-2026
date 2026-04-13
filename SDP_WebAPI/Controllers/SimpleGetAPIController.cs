@@ -37,7 +37,19 @@ namespace SDP_WebAPI.Controllers
             // Return JSON string
             return jsonString;
         }
+        //Find Customer data
+        [HttpGet("FindCustomerData")]
+        public String FindCustomerData(int customerId)
+        {
+            dboGetCompanyData dboGetCompanyData = new dboGetCompanyData(_configuration["ConnectionStrings"]);
+            DataTable dtResult = dboGetCompanyData.GetCustomerDataById(customerId);
 
+            // Convert DataTable to JSON string
+            string jsonString = JsonConvert.SerializeObject(dtResult);
+
+            // Return JSON string
+            return jsonString;
+        }
     }
     
 }

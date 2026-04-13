@@ -16,7 +16,8 @@ namespace DatabaseAccessController
         {
             this.connectionString = connectionString;
         }
-    }
+    
+
 
     public DataTable GetData(String sqlCmd)
         {
@@ -41,4 +42,4 @@ namespace DatabaseAccessController
             }
         }
 
-    }
+    } }

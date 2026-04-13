@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            lblCustomerDetails = new Label();
+            dgvCustomerDetails = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvCustomerDetails).BeginInit();
+            SuspendLayout();
+            // 
+            // lblCustomerDetails
+            // 
+            lblCustomerDetails.AutoSize = true;
+            lblCustomerDetails.Location = new Point(167, 59);
+            lblCustomerDetails.Name = "lblCustomerDetails";
+            lblCustomerDetails.Size = new Size(97, 15);
+            lblCustomerDetails.TabIndex = 0;
+            lblCustomerDetails.Text = "Customer Details";
+            // 
+            // dgvCustomerDetails
+            // 
+            dgvCustomerDetails.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCustomerDetails.Location = new Point(148, 106);
+            dgvCustomerDetails.Name = "dgvCustomerDetails";
+            dgvCustomerDetails.Size = new Size(378, 232);
+            dgvCustomerDetails.TabIndex = 1;
+            // 
+            // frmLab5
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(dgvCustomerDetails);
+            Controls.Add(lblCustomerDetails);
+            Name = "frmLab5";
+            Text = "Form1";
+            Load += frmLab5_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvCustomerDetails).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lblCustomerDetails;
+        private DataGridView dgvCustomerDetails;
     }
 }
